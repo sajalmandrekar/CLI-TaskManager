@@ -1,4 +1,7 @@
 #ignore test files
 node_modules/
 
+#ignore I/O files
 log.txt
+task.txt
+complete.txt
