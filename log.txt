@@ -1,0 +1,53 @@
+./task.out 
+./task.out help 
+./task.out add 1 'the thing i need to do'
+./task.out add 
+./task.out add 1 'the thing i need to do' 
+./task.out add 2 "water the plants" 
+./task.out add 3 "find needle in the haystack" 
+./task.out add 1 'the thing i need to do' 
+./task.out add 2 "water the plants" 
+./task.out add 3 "find needle in the haystack" 
+./task.out ls 
+./task.out ls 
+./task.out add 1 'the thing i need to do' 
+./task.out add 2 "water the plants" 
+./task.out add 3 "find needle in the haystack" 
+./task.out del 2 
+./task.out add 1 'the thing i need to do' 
+./task.out add 2 "water the plants" 
+./task.out add 3 "find needle in the haystack" 
+./task.out del 3 
+./task.out del 2 
+./task.out del 1 
+./task.out add 0 'the thing i need to do' 
+./task.out add 1 "water the plants" 
+./task.out add 2 "find needle in the haystack" 
+./task.out del 1 
+./task.out del 1 
+./task.out del 1 
+./task.out add 0 'the thing i need to do' 
+./task.out add 1 "water the plants" 
+./task.out add 2 "find needle in the haystack" 
+./task.out del 0 
+./task.out del 4 
+./task.out del 5 
+./task.out del 
+./task.out add 0 'the thing i need to do' 
+./task.out add 1 "water the plants" 
+./task.out add 2 "find needle in the haystack" 
+./task.out done 2 
+./task.out add 0 'the thing i need to do' 
+./task.out add 1 "water the plants" 
+./task.out add 2 "find needle in the haystack" 
+./task.out done 0 
+./task.out add 0 'the thing i need to do' 
+./task.out add 1 "water the plants" 
+./task.out add 2 "find needle in the haystack" 
+./task.out done 
+./task.out add 0 'the thing i need to do' 
+./task.out add 1 "water the plants" 
+./task.out add 2 "find needle in the haystack" 
+./task.out done 1 
+./task.out done 2 
+./task.out report 
