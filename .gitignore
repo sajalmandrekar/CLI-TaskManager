@@ -1,6 +1,8 @@
 #ignore test files
 node_modules/
 
+.vscode/
+
 #ignore I/O files
 log.txt
 task.txt
