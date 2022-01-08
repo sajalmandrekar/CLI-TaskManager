@@ -19,3 +19,6 @@ remove:
 git:
 	git add .
 	git commit -m "default commit"
+
+push:
+	git push mtask master:main
