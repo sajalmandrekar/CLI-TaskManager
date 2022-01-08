@@ -1,5 +1,17 @@
 # MTASK - A Command line Task Manager
 
+- MTask is a simple command line task manager
+- Main features include:
+    1. adding/delete new tasks
+    2. mark tasks as complete
+    3. display pending/completed tasks
+
+## Installation:
+1. download the source code
+2. (optional) add to PATH for system wide use
+
+## Execution:
+### Linux/Unix:
 type `./task help` to get help
 ```
 Usage :-
@@ -11,3 +23,11 @@ $ ./task help                 # Show usage
 $ ./task report               # Statistics
 $ ./task reset                # Clears all pending and completed tasks
 ```
+
+### Windows:
+Use `.\task.bat` instead of `./task`
+
+## Contact developer:
+- developed by: Sajal Mandrekar
+- contact: sajalmandrekar@gmail.com
+- twitter: @mandrekar_sajal
