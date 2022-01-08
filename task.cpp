@@ -29,6 +29,7 @@ void listTasks();
 void taskComplete(char* index);
 void delTask(char* index);
 void getReport();
+void resetTasks();
 
 
 // $ ./task help 
@@ -357,6 +358,26 @@ void getReport()
 
 }
 
+void resetTasks()
+{
+    //overwrites task.txt and complete.txt
+
+    char choice;
+    cout<<"This action will delete all your pending as well as completed tasks\n";
+    cout<<"Proceed (Y/N): ";
+    cin>>choice;
+
+    if(choice == 'y' || choice == 'Y')
+    {
+        ofstream task_fout,cmplt_fout;
+        task_fout.open("task.txt",ios::trunc);
+        cmplt_fout.open("complete.txt",ios::trunc);
+
+        task_fout.close();
+        cmplt_fout.close();
+    }
+    return;
+}
 
 int main(int argc, char* argv[])
 {
@@ -388,6 +409,11 @@ int main(int argc, char* argv[])
         {
             //list from complete.txt and (task.txt - complete.txt)
             getReport();
+        }
+        else if(strcmp(argv[1],"reset") == 0)
+        {
+            //remove all pending and comlpeted task
+            resetTasks();
         }
         else if(strcmp(argv[1],"del") == 0)     // $ ./task del [index]
         {
