@@ -15,3 +15,7 @@ install:
 
 remove:
 	rm -f task.txt complete.txt
+
+git:
+	git add .
+	git commit -m "default commit"

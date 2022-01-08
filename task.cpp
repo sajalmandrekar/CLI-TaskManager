@@ -24,7 +24,7 @@ bool compare_task(Task t1, Task t2)
 
 void showHelp();
 list<Task> getIncompleteTask();
-void addTask(char *priority, char *task);
+void addTask(int priority, char *task);
 void listTasks();
 void taskComplete(char* index);
 void delTask(char* index);
@@ -98,7 +98,7 @@ list<Task> getIncompleteTask()
 
 
 // $ ./task add [priority] [description]
-void addTask(char *priority, char *task)
+void addTask(int priority, char *task)
 {
     /*
     add command logic:
@@ -407,9 +407,24 @@ int main(int argc, char* argv[])
         }
         else if(strcmp(argv[1],"add") == 0)     // $ ./task add [priority] [task_desc]
         {
+            //check if priority is a number
+            char *endp;
+            int priority;
+            long converted = strtol(argv[2], &endp, 10);
+            if(*endp)
+            {
+                //not a number
+                cout<<"Error: Invalid type, Expecting int, but char* was passed\n Format: ./task add [int] [string]\n";
+                return 0;
+            }
+            else
+            {
+                priority = (int) converted;
+            }
+
             //add to task.txt
             if(argc == 4)
-                addTask(argv[2],argv[3]);
+                addTask(priority,argv[3]);
             else
                 cout<<"Error: Missing tasks string. Nothing added!\n";
         }
