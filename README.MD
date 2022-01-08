@@ -9,4 +9,5 @@ $ ./task del INDEX            # Delete the incomplete item with the given index
 $ ./task done INDEX           # Mark the incomplete item with the given index as complete
 $ ./task help                 # Show usage
 $ ./task report               # Statistics
+$ ./task reset                # Clears all pending and completed tasks
 ```
