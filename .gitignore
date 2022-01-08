@@ -3,7 +3,7 @@ node_modules/
 
 .vscode/
 
-INSTRUCTIONS.md
+INSTRUCTION.md
 task.test.js
 
 #ignore I/O files
